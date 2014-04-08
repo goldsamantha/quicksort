@@ -1,5 +1,5 @@
 
-PROGRAMS = testQuickSort testPoint testPerson
+PROGRAMS = testQuickSort 
 CXX = g++
 CXXFLAGS = -g
 
