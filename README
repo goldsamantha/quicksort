@@ -1,0 +1,7 @@
+quicksort
+========
+This is an implementation of quicksort written in c++
+
+To compile and run run
+sam[~]$ make
+sam[~]$ ./testQuickSort
