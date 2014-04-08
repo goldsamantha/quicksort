@@ -1,5 +1,5 @@
 
-PROGRAMS = testQuickSort testPoint testPerson
+PROGRAMS = testQuickSort 
 CXX = g++
 CXXFLAGS = -g
 
@@ -9,11 +9,6 @@ all: $(PROGRAMS)
 testQuickSort: randarray.o point.o testQuickSort.cpp quicksort.inl quicksort.h
 	$(CXX) $(CXXFLAGS) -o testQuickSort randarray.o point.o testQuickSort.cpp
 
-testPoint: point.o testPoint.cpp
-	$(CXX) $(CXXFLAGS) -o testPoint point.o testPoint.cpp
-
-testPerson: person.o testPerson.cpp
-	$(CXX) $(CXXFLAGS) -o testPerson person.o testPerson.cpp
 
 %.o: %.cpp %.h
 	$(CXX) $(CXXFLAGS) -c $<
